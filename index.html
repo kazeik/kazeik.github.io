@@ -13,13 +13,23 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-
+<ul> 
+    <?php 
+        for($i=1;$i<=5;$i++){ 
+            ?> 
+            <li>Item No 
+                <?php 
+                    echo $i; 
+                ?>
+            </li> 
+        <?php 
+        } 
+        ?> </ul>
 <body>
     <div class="wrapper">
         <header>
-            <?php
-                echo new Date();
-            ?>
+            <h1>Kazeik.GitHub.io</h1>
+            <p>独行的苏泽</p>
 
 
             <p class="view"><a href="https://github.com/kazeik">View My GitHub Profile</a></p>
@@ -31,13 +41,9 @@
 
             <p>独行的苏泽</p>
         </section>
+       
         <footer>
-            <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
-               <?php
-                echo new date();
-                echo "<br>"
-                echo "by:kazeik"
-            ?></small></p>
+            <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
         </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
